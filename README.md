@@ -64,4 +64,6 @@ Pills are loaded only in compartments 1, 2, 4, 6, and 7. The remaining compartme
 
 ![Screenshot 2024-12-25 022142](https://github.com/user-attachments/assets/518eafc2-a7cb-4951-b28f-435d0ba513d0)
 ## Demonstration
+Watch the demo video here!
+###
 https://www.linkedin.com/posts/markferdo_iot-embedded-activity-7277570978669359105-BNWH?utm_source=share&utm_medium=member_desktop
