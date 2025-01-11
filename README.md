@@ -12,4 +12,6 @@
 ###  💠 The device remembers its state even if the power goes off.
 ### 💠 After powering back on, it continues from where it stopped. 
 ### 💠 If power is lost during dispensing, it recalibrates automatically without dispensing the pills. 
-
+## How the device works: 
+## 💠 Calibration process
+jfjfjjfjfjffjff
