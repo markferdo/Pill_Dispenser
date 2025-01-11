@@ -30,4 +30,8 @@ In this system, it saves the state each time it changes. To write and read it us
 The device mainly has two EEPROM functions: writing and reading. During the process, the system tracks three main states: calibration state, dispense state, and compartment number. 
 ###
 This state tracking helps to detect that the calibration is completed (ready to dispense pills), dispense completed, and the current compartment. These states are useful for running the motor properly even if there is a power failure during the dispensing and switch-off scenario.
-
+### 💠 Dispensing logic 
+If the average steps are available, the device is ready to dispense pills. It waits for the button press to start the process. When dispensing, it moves one compartment at a time, and there is a 30-second time duration between two dispenses.
+###
+Piezo sensor helps to detect whether the pill is dispensed or not. Piezo sensor is initialized as an interrupt and once it is triggered it will update the compartment number and move on to the next compartment. This process continues until all the pills are dispensed. If there are no pills to detect during the dispensing, then the system waits a minimum time to catch the event, if there are no pills detected during the waiting, the system detects this as ‘no pill dispensed’. It updates the situation and moves on to the next. Likewise, the dispensing process continues for a full cycle (7-compartment run) even 
+if there are no pills. 
