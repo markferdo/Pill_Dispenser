@@ -27,5 +27,7 @@ The calibration process starts when the opto-fork is triggered. Following the tr
 ### 💠 State management
 In this system, it saves the state each time it changes. To write and read it uses EEPROM and i2c protocols. In the main program, switch cases are used to decide which state to perform based on the EEPROM values.
 ####
-The device mainly has two EEPROM functions: writing and reading. During the process, the system tracks three main states: calibration state, dispense state, and compartment number. This state tracking helps to detect that the calibration is completed (ready to dispense pills), dispense completed, and the current compartment. These states are useful for running the motor properly even if there is a power failure during the dispensing and switch-off scenario.
+The device mainly has two EEPROM functions: writing and reading. During the process, the system tracks three main states: calibration state, dispense state, and compartment number. 
+###
+This state tracking helps to detect that the calibration is completed (ready to dispense pills), dispense completed, and the current compartment. These states are useful for running the motor properly even if there is a power failure during the dispensing and switch-off scenario.
 
