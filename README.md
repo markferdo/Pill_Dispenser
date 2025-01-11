@@ -35,3 +35,9 @@ If the average steps are available, the device is ready to dispense pills. It wa
 ###
 Piezo sensor helps to detect whether the pill is dispensed or not. Piezo sensor is initialized as an interrupt and once it is triggered it will update the compartment number and move on to the next compartment. This process continues until all the pills are dispensed. If there are no pills to detect during the dispensing, then the system waits a minimum time to catch the event, if there are no pills detected during the waiting, the system detects this as ‘no pill dispensed’. It updates the situation and moves on to the next. Likewise, the dispensing process continues for a full cycle (7-compartment run) even 
 if there are no pills. 
+### 💠 Power failure handling 
+If there is any power failure during the dispensing process, it means the compartment stops 
+somewhere in the middle of the 2 compartment positions. Since the stop position is unknown in this case, it starts to recalibrate to detect the position. To do this, the motor will run in the reverse to the starting position and then move to the last dispensed compartment number. Once it repositions to the last dispensed compartment, it starts dispensing the pills again.
+###
+When the power is back it reads the compartment state from the EEPROM. Based on the state, it 
+detects which process to run.
