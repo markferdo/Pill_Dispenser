@@ -60,3 +60,5 @@ situation of the device.
 ## Flow chart
 ![Flowchart](https://github.com/user-attachments/assets/c1d01f62-ee6b-4523-8919-c1785f84fb94)
 ## Live status report
+![Screenshot 2024-12-25 022142](https://github.com/user-attachments/assets/518eafc2-a7cb-4951-b28f-435d0ba513d0)
+## demonstration video
