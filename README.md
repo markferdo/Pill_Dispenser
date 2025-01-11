@@ -41,3 +41,20 @@ somewhere in the middle of the 2 compartment positions. Since the stop position 
 ###
 When the power is back it reads the compartment state from the EEPROM. Based on the state, it 
 detects which process to run.
+## Implementation: 
+Here, we will dive into how the system works in detail. When the device boots for the first time, it assigns temporary states to all EEPROM variables. The reason is to avoid reading garbage values when EEPROM reads back. Once it has the temporary value, the software can perform normally. Once it assigns real value during the flow, the temporary values are no longer needed.
+### 
+The system uses five memory addresses to write and read EEPROM data.
+### 
+• DISPENSE_STATE_ADDRESS: Store state and non-state to check any errors. 
+###
+• COMPARTMENT_NO_ADDRESS: Tracking the compartment number. 
+###
+• COMPARTMENT_START_STOP_ADDRESS: Based on start and stop, it can detect the power 
+failure situation (power loss during turning). 
+###
+• AVERAGE_STEPS_ADDRESS: Helps to dispense pills after power off-on situation. 
+###
+• CALIBRATION_STATE_ADDRESS: Based on the state (true or false) it detects the current 
+situation of the device.
+
