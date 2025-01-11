@@ -4,11 +4,16 @@
 💠Opto fork sensor (Configured as an input with pull-up resistor)
 ###
 💠Piezo sensor (Configured as an input with pull-up resistor)
-### 💠Stepper motor
-### 💠EEPROM
-### 💠I2C protocol
-### 💠LED
-### 💠Buttons
+### 
+💠Stepper motor
+### 
+💠EEPROM
+### 
+💠I2C protocol
+### 
+💠LED
+### 
+💠Buttons
 ## 💡 Key Features of the Device:
 ###  💠 The device remembers its state even if the power goes off.
 ### 💠 After powering back on, it continues from where it stopped. 
