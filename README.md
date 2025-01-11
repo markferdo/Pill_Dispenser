@@ -23,4 +23,4 @@
 💠 If power is lost during dispensing, it recalibrates automatically without dispensing the pills. 
 ## How the device works: 
 ### 💠 Calibration process
-jfjfjjfjfjffjff
+The calibration process starts when the opto-fork is triggered. Following the trigger, the motor will run 2 full cycles to get the average steps per revolution. Once the system has the average steps, it can dispense pills. We have three main functions for this purpose: motor running, calibration, and run function. These three functions are responsible for energizing the motor, calibrating it, and then dispensing the pills. 
