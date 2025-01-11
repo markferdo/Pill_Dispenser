@@ -57,4 +57,5 @@ failure situation (power loss during turning).
 ###
 • CALIBRATION_STATE_ADDRESS: Based on the state (true or false) it detects the current 
 situation of the device.
+## Flow chart
 
