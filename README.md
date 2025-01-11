@@ -59,4 +59,4 @@ failure situation (power loss during turning).
 situation of the device.
 ## Flow chart
 ![Flowchart](https://github.com/user-attachments/assets/c1d01f62-ee6b-4523-8919-c1785f84fb94)
-
+## Live status report
