@@ -1,5 +1,5 @@
 # Pill_Dispenser
-### Automated system that calibrates and dispenses pills in certain intervals
+### An automated system for calibrating and dispensing pills at specified intervals.
 ## 💻 Technologies and Tools Used:
 💠Opto fork sensor (Configured as an input with pull-up resistor)
 ###
