@@ -22,5 +22,5 @@
 ### 
 💠 If power is lost during dispensing, it recalibrates automatically without dispensing the pills. 
 ## How the device works: 
-## 💠 Calibration process
+### 💠 Calibration process
 jfjfjjfjfjffjff
